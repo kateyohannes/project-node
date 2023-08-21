@@ -1,7 +1,10 @@
-from ffmpeg import FFmpeg
+import asyncio
+
+from ffmpeg import Progress
+from ffmpeg.asyncio import FFmpeg
 
 
-def main():
+async def main():
     ffmpeg = (
         FFmpeg()
         .option("y")
@@ -15,8 +18,8 @@ def main():
         )
     )
 
-    ffmpeg.execute()
+    await ffmpeg.execute()
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
