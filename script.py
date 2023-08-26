@@ -10,7 +10,7 @@ async def main():
         .option("y")
         .input("assets/video/sample.mp4")
         .output(
-            "ouptut.mp4",
+            "assets/video/out/ouptut.mp4",
             {"codec:v": "libx264"},
             vf="scale=1280:-1",
             preset="slow",
