@@ -13,7 +13,7 @@ async def main():
             "assets/video/out/ouptut.mp4",
             {"codec:v": "libx264"},
             vf="scale=1280:-1",
-            preset="slow",
+            preset="fast",
             crf=24,
         )
     )
