@@ -7,10 +7,10 @@ def main():
     ffmpeg = (
         FFmpeg()
         .option("y")
-        .input("input-a.mp4")
-        .input("input-b.mp4")
+        .input("assets/video/sample.mp4")
+        .input("assets/video/sample_2.mp4")
         .output(
-            "output.mp4",
+            "asset/video/output/out.mp4",
             map=["0:0", "1:1"],
         )
     )
