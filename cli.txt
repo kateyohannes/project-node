@@ -1,0 +1,1 @@
+ffmpeg -i assets/video/sample.mp4 assets/video/output/file.avi
